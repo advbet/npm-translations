@@ -14,7 +14,7 @@ export function getOrdinal(key: string, num: number, loc: string) {
 	const ordinals: ordinals = {};
 
 	if (!special) {
-		return;
+		return {};
 	}
 
 	if (

@@ -1,5 +1,2 @@
-declare type test = {
-    name: string;
-};
-export declare const test: (name: test) => void;
-export {};
+export declare function getOrdinal(key: string, num: number, loc: string): {} | undefined;
+export declare const toOrdinal: (special: string, num: number, loc: string) => string | number;
