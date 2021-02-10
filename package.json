@@ -2,13 +2,14 @@
   "name": "@advbet/translations",
   "version": "1.0.9",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "npm run test",
+    "prepare": "npm run build",
     "build" : "tsc"
   },
   "prepublish": "tsc",
-  "author": "",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -16,5 +17,6 @@
   },
   "devDependencies": {
     "typescript": "^4.1.3"
-  }
+  },
+  "author": "Aardvark"
 }
