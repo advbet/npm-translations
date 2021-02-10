@@ -1,0 +1,20 @@
+{
+  "name": "@advbet/translations",
+  "version": "1.0.9",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "build" : "tsc"
+  },
+  "prepublish": "tsc",
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/advbet/npm-translations.git"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}

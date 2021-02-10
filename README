@@ -1,0 +1,13 @@
+## AARDVARK TRANSLATIONS #
+This is repository for [@advbet/translations](https://www.npmjs.com/package/@advbet/translations) NPM package 🚀
+
+### How to push changes to NPM?
+To push changes - authenticate with advbet account and update package version:
+
+1. `npm adduser advbet`
+
+2. type the credentials
+
+3. change `version` in `package.json`
+
+4. `npm publish`
