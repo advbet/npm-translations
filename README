@@ -1,8 +1,14 @@
 ## AARDVARK TRANSLATIONS #
 This is repository for [@advbet/translations](https://www.npmjs.com/package/@advbet/translations) NPM package 🚀
 
+To build project, run:
+`npm run build`
+
+To run tests, run:
+`npm run test`
+
 ### How to push changes to NPM?
-To push changes - authenticate with advbet account and update package version:
+To push changes - authenticate with advbet account (credentials are in wiki) and update package version:
 
 1. `npm adduser advbet`
 
