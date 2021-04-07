@@ -9,3 +9,6 @@ Added new functions:
 
 Updated buildBetParams function:
 - if params has innings param, count param will be introduced equal value to inning type int.
+## 1.1.3
+
+Update Modules(AMD, cjs, esn) with 1.1.2 update code.
