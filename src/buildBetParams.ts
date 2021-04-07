@@ -45,6 +45,10 @@ export default function buildBetParams({ params, lang, stringsUILang, ignoreOpti
 		});
 	});
 
+	if (params && params.inning) {
+		params.count = Number(params.inning);
+	}
+
 	if (ignoreOptionalParams) {
 		const optionalMarketParams = optionalMarketParamsByLanguage[lang] || [];
 
@@ -54,6 +58,7 @@ export default function buildBetParams({ params, lang, stringsUILang, ignoreOpti
 			}
 		});
 	}
+
 
 	return obj;
 }
