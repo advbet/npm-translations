@@ -12,3 +12,7 @@ Updated buildBetParams function:
 ## 1.1.3
 
 Update Modules(AMD, cjs, esn) with 1.1.2 update code.
+
+## 1.1.4
+
+Hotfix: Support player string translations that do not start with 'player' string
