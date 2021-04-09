@@ -19,7 +19,7 @@ export default function buildBetParams({ params, lang, stringsUILang, ignoreOpti
 	Object.entries(params).forEach(([paramsKey, paramsValue]) => {
 		let value = String(paramsValue);
 
-		if (paramsKey.startsWith('player') && eventStrings && stringsUILang) {
+		if (paramsKey.includes('player') && eventStrings && stringsUILang) {
 			const players = eventStrings[stringsUILang]
 				? (eventStrings[stringsUILang].players || {})
 				: {};
