@@ -1,8 +1,9 @@
 import { optionalMarketParamsByLanguage, paramsToOrdinals } from './variables';
 import { paramsType, betParamsType } from './types';
 import getOrdinal from './getOrdinal';
+import translationByLocale from './translationByLocale';
 
-export default function buildBetParams({ params, lang, stringsUILang, ignoreOptionalParams, eventStrings }: betParamsType) {
+export default function buildBetParams({ params, lang, stringsUILang, ignoreOptionalParams, eventStrings }: betParamsType): paramsType {
 	const obj: paramsType = {};
 
 	if (!params) {
@@ -20,8 +21,9 @@ export default function buildBetParams({ params, lang, stringsUILang, ignoreOpti
 		let value = String(paramsValue);
 
 		if (paramsKey.includes('player') && eventStrings && stringsUILang) {
-			const players = eventStrings[stringsUILang]
-				? (eventStrings[stringsUILang].players || {})
+			const translations = translationByLocale(eventStrings, stringsUILang);
+			const players = translations
+				? (translations.players || {})
 				: {};
 			obj[paramsKey] = players[params[paramsKey]] || params[paramsKey];
 			value = String(obj[paramsKey]);
