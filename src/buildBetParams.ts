@@ -22,9 +22,8 @@ export default function buildBetParams({ params, lang, stringsUILang, ignoreOpti
 
 		if (paramsKey.includes('player') && eventStrings && stringsUILang) {
 			const translations = translationByLocale(eventStrings, stringsUILang);
-			const players = translations
-				? (translations.players || {})
-				: {};
+			const players = translations?.players || {};
+
 			obj[paramsKey] = players[params[paramsKey]] || params[paramsKey];
 			value = String(obj[paramsKey]);
 		}
