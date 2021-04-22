@@ -21,3 +21,8 @@ Hotfix: Support player string translations that do not start with 'player' strin
 
 Add 'translationByLocale' function which retrieves closest possible translation from provided strings map.
 Resolve available translations in buildBetParams function.
+
+## 1.2.4
+
+Fix '!' ordinal generator for 'es' and 'lt' languages.
+Generate ordinals only for parameters that were white-listed.

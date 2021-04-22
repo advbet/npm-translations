@@ -49,6 +49,9 @@ const optionalMarketParamsByLanguage: { [key: string]: string[] } = {
     ],
     sw: [
         'handicap', 'points', 'fours', 'extras', 'ducks', 'runOuts', 'sixes', 'wides', 'performance'
+    ],
+    'sw-TZ': [
+        'handicap', 'points', 'fours', 'extras', 'ducks', 'runOuts', 'sixes', 'wides', 'performance'
     ]
 };
 
