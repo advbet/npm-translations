@@ -1,8 +1,8 @@
 {
-	"extends": "./tsconfig.json",
-	"compilerOptions": {
-	  "module": "AMD",
-	  "baseUrl": ".",
-	  "outDir": "./lib/amd"
-	}
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "AMD",
+    "baseUrl": ".",
+    "outDir": "./lib/amd"
+  }
 }

@@ -16,3 +16,8 @@ Update Modules(AMD, cjs, esn) with 1.1.2 update code.
 ## 1.1.4
 
 Hotfix: Support player string translations that do not start with 'player' string
+
+## 1.2.0
+
+Add 'translationByLocale' function which retrieves closest possible translation from provided strings map.
+Resolve available translations in buildBetParams function.
