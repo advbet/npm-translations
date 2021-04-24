@@ -17,33 +17,29 @@ export default function buildBetParams({ params, lang, stringsUILang, ignoreOpti
 			- parseFloat(handicapString.split(':')[1]);
 	}
 
-	Object.entries(params).forEach(([paramsKey, paramsValue]) => {
-		let value = String(paramsValue);
-
-		if (paramsKey.includes('player') && eventStrings && stringsUILang) {
+	Object.entries(params).forEach(([paramKey, paramValue]) => {
+		if (paramKey.includes('player') && eventStrings && stringsUILang) {
 			const translations = translationByLocale(eventStrings, stringsUILang);
 			const players = translations?.players || {};
 
-			obj[paramsKey] = players[params[paramsKey]] || params[paramsKey];
-			value = String(obj[paramsKey]);
+			obj[paramKey] = players[params[paramKey]] || params[paramKey];
 		}
 
-		let extraKeys = ['!'];
-		const isKeyMapped = paramsToOrdinals.includes(paramsKey);
+		let ordinalKeys = ['!'];
 
 		if (lang === 'es') {
-			extraKeys = ['^!'];
+			ordinalKeys = ['!', '^!'];
 		}
 
 		if (lang === 'lt') {
-			extraKeys = ['^!', '?', '^?', '+', '^+'];
+			ordinalKeys = ['!', '^!', '?', '^?', '+', '^+'];
 		}
 
-		extraKeys.forEach(specialKey => {
-			obj[`${paramsKey}${specialKey}`] = isKeyMapped
-				? getOrdinal(`${paramsKey}${specialKey}`, value, lang)
-				: value;
-		});
+		 if (paramsToOrdinals.includes(paramKey)) {
+			ordinalKeys.forEach((ordinalKey) => {
+				obj[`${paramKey}${ordinalKey}`] = getOrdinal(`${paramKey}${ordinalKey}`, paramValue, lang);
+			});
+		 }
 	});
 
 	if (params && params.inning) {
@@ -59,7 +55,6 @@ export default function buildBetParams({ params, lang, stringsUILang, ignoreOpti
 			}
 		});
 	}
-
 
 	return obj;
 }
