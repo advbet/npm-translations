@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
+    "target": "es3",
     "module": "esnext",
     "declaration": true,
     "outDir": "./lib/esm",
