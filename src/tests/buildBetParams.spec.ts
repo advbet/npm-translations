@@ -29,33 +29,17 @@ describe('should test buildBetParams method', () => {
         expect(buildBetParams({
             params: { playerID: "sr:player:x" },
             lang: 'en',
-            eventStrings: {
-                'en': {
-                    players: {
-                        'sr:player:x': 'X',
-                        'sr:player:y': 'Y',
-                    }
-                }
-            }
         })).toEqual({});
 
         expect(buildBetParams({
             params: { playerID: "sr:player:x" },
             lang: 'en',
-            stringsUILang: 'en',
-        })).toEqual({});
-
-        expect(buildBetParams({
-            params: { playerID: "sr:player:x" },
-            lang: 'en',
-            stringsUILang: 'en',
             eventStrings: {}
         })).toEqual({ 'playerID': 'sr:player:x' });
 
         expect(buildBetParams({
             params: { playerID: "sr:player:x" },
             lang: 'en',
-            stringsUILang: 'en',
             eventStrings: {
                 'en': {}
             }
@@ -64,7 +48,6 @@ describe('should test buildBetParams method', () => {
         expect(buildBetParams({
             params: { playerID: "sr:player:x" },
             lang: 'en',
-            stringsUILang: 'en',
             eventStrings: {
                 'lt': {
                     players: {
@@ -78,7 +61,6 @@ describe('should test buildBetParams method', () => {
         expect(buildBetParams({
             params: { playerID: "sr:player:x" },
             lang: 'en',
-            stringsUILang: 'en',
             eventStrings: {
                 'en': {
                     players: {}
@@ -89,7 +71,6 @@ describe('should test buildBetParams method', () => {
         expect(buildBetParams({
             params: { playerID: "sr:player:x" },
             lang: 'en',
-            stringsUILang: 'en',
             eventStrings: {
                 'en': {
                     players: {
@@ -102,7 +83,6 @@ describe('should test buildBetParams method', () => {
         expect(buildBetParams({
             params: { playerID: "sr:player:x" },
             lang: 'en',
-            stringsUILang: 'en',
             eventStrings: {
                 'en': {
                     players: {
@@ -115,8 +95,7 @@ describe('should test buildBetParams method', () => {
 
         expect(buildBetParams({
             params: { playerID: "sr:player:x" },
-            lang: 'en',
-            stringsUILang: 'lt',
+            lang: 'lt',
             eventStrings: {
                 'en': {
                     players: {

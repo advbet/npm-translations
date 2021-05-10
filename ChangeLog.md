@@ -26,3 +26,7 @@ Resolve available translations in buildBetParams function.
 
 Fix '!' ordinal generator for 'es' and 'lt' languages.
 Generate ordinals only for parameters that were white-listed.
+
+## 1.3.0
+
+Remove stringsUILang from buildBetParams argument list.
