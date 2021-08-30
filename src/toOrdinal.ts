@@ -17,6 +17,7 @@ export default function toOrdinal(special: string, num: number | string, loc: st
 	switch (loc) {
 		case 'en':
 		case 'en-ZA':
+		case 'en-JM':
 			switch (special) {
 				case '!':
 					ordinal = isTeen ? 'th' :
