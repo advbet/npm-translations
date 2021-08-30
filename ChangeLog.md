@@ -27,8 +27,8 @@ Update Modules(AMD, cjs, esn) with 1.1.2 update code.
 
 ## 1.1.2
 
-Fix '!' ordinal generator for 'es' and 'lt' languages.
-Generate ordinals only for parameters that were white-listed.
+Updated buildBetParams function:
+- if params has innings param, count param will be introduced equal value to inning type int.
 
 ## 1.1.0
 
