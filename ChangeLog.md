@@ -1,3 +1,7 @@
+## 1.2.7
+
+Add support for handicap parameter in home_over home_under away_under away_over selections.
+
 ## 1.2.6
 
 Add ordinal generator for 'en-JM' language.
