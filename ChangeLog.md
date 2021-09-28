@@ -1,6 +1,10 @@
-## 1.2.7
+## 1.2.8
 
 In 'buildBetParams' function remove 'lang' and 'stringsUILang' props, and only pass single locale, everything else(fallbacks if needed) should be handled by the function itself.
+
+## 1.2.7
+
+Add support for handicap parameter in home_over home_under away_under away_over selections.
 
 ## 1.2.6
 
