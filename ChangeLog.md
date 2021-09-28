@@ -1,3 +1,7 @@
+## 1.2.8
+
+In 'buildBetParams' function remove 'lang' and 'stringsUILang' props, and only pass single locale, everything else(fallbacks if needed) should be handled by the function itself.
+
 ## 1.2.7
 
 Add support for handicap parameter in home_over home_under away_under away_over selections.
@@ -29,6 +33,7 @@ Update Modules(AMD, cjs, esn) with 1.1.2 update code.
 
 Updated buildBetParams function:
 - if params has innings param, count param will be introduced equal value to inning type int.
+
 ## 1.1.0
 
 Added new functions:

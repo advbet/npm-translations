@@ -3,7 +3,7 @@ import { paramsType, betParamsType } from './types';
 import getOrdinal from './getOrdinal';
 import translationByLocale from './translationByLocale';
 
-export default function buildBetParams({ params, lang, stringsUILang, ignoreOptionalParams, eventStrings }: betParamsType): paramsType {
+export default function buildBetParams({ params, lang, ignoreOptionalParams, eventStrings }: betParamsType): paramsType {
 	const obj: paramsType = {};
 
 	if (!params) {
@@ -18,8 +18,8 @@ export default function buildBetParams({ params, lang, stringsUILang, ignoreOpti
 	}
 
 	Object.entries(params).forEach(([paramKey, paramValue]) => {
-		if (paramKey.includes('player') && eventStrings && stringsUILang) {
-			const translations = translationByLocale(eventStrings, stringsUILang);
+		if (paramKey.includes('player') && eventStrings && lang) {
+			const translations = translationByLocale(eventStrings, lang);
 			const players = translations?.players || {};
 
 			obj[paramKey] = players[params[paramKey]] || params[paramKey];

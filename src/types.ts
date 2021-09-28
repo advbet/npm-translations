@@ -23,7 +23,6 @@ export type paramsType = {
 export type betParamsType = {
 	params: paramsType | null,
 	lang: string,
-	stringsUILang?: string,
 	ignoreOptionalParams?: boolean,
 	eventStrings?: eventStringType
 }
