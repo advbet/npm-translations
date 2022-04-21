@@ -1,6 +1,6 @@
 {
   "name": "@advbet/translations",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -16,7 +16,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/advbet/npm-translations.git"
+    "url": "https://github.com/advbet/npm-translations.git"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",
