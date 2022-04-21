@@ -1,3 +1,6 @@
+## 1.2.9
+
+Add 'map' to parameters that need to be converted to ordinals
 ## 1.2.8
 
 In 'buildBetParams' function remove 'lang' and 'stringsUILang' props, and only pass single locale, everything else(fallbacks if needed) should be handled by the function itself.
