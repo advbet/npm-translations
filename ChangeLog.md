@@ -1,3 +1,6 @@
+## 1.2.10
+
+Add 'leg' and 'visit' to parameters that need to be converted to ordinals.
 ## 1.2.9
 
 Add 'map' to parameters that need to be converted to ordinals

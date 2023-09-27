@@ -11,6 +11,8 @@ const paramsToOrdinals = [
     'delivery',
     'frame',
     'map',
+    'leg',
+    'visit',
 ];
 
 // TODO: remove optionalMarketParams.json file from sportbets when web-ui, cashier-ui, live-support-ui, admin-ui starts using this npm package
