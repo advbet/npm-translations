@@ -130,7 +130,8 @@ const marketTranslationParams: string[] = [
     'tries',
     'ups',
     'visit!',
-    'wides'
+    'wides',
+    'total'
 ];
 
 export {
