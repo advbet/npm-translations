@@ -126,6 +126,7 @@ const marketTranslationParams: string[] = [
     'sets',
     'sixes',
     'to',
+    'total',
     'towers',
     'tries',
     'ups',
