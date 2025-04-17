@@ -1,3 +1,6 @@
+## 1.2.11
+
+Add 'total' market parameter.
 ## 1.2.10
 
 Add 'leg' and 'visit' to parameters that need to be converted to ordinals.
